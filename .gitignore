@@ -1,0 +1,7 @@
+design-files/*
+bower_components/*
+node_modules/*
+_assets/images/*
+.sass-cache/*
+*.map
+*.scssc
