@@ -1,0 +1,26 @@
+  <body>
+
+    <header class="header">
+
+      <div class="container">
+
+        <h1 class="visuallyhidden">{{ site.title }}</h1>
+        <a class="site-title" href="{{ site.url }}/">
+          <img class="logo" src="_assets/images/spankys-logo.svg" alt="Spanky's logo">
+        </a>
+
+        <nav class="nav__primary">
+          {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
+          {% endfor %}
+        </nav>
+
+      </div> <!-- END CONTAINER -->
+
+    </header>
+
+    <main class="main">
+
+      <div class="container">

@@ -1,0 +1,2 @@
+- favicon
+- Google Analytics

@@ -1,0 +1,34 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Spanky's
+email: pyrographicdesign@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Spanky's is a full-service pet-sitting company servicing Baltimore, MD and Boulder County, CO. We are bonded &amp; insured and highly recommended by both clients and veterinarians. We offer thorough and reliable service, year-round. Plus, we're staffed with professional and caring pet sitters and dog walkers."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://spankys.com" # the base hostname & protocol for your site
+twitter_username: mikeriley131
+github_username:  mikeriley131
+
+host: localhost
+
+include: ['_assets', '_pages']
+exclude: ['Gruntfile.js', 'package.json', 'to-do.md', 'node_modules']
+
+defaults:
+  -
+    scope:
+      path: "index.html" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+  -
+    scope:
+      path: "_pages"
+    values:
+      layout: "interior"
