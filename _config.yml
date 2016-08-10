@@ -6,12 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Spanky's
-email: pyrographicdesign@gmail.com
+title: SITE TITLE
+email: SITE CONTACT
 description: > # this means to ignore newlines until "baseurl:"
-  Spanky's is a full-service pet-sitting company servicing Baltimore, MD and Boulder County, CO. We are bonded &amp; insured and highly recommended by both clients and veterinarians. We offer thorough and reliable service, year-round. Plus, we're staffed with professional and caring pet sitters and dog walkers."
+  SITE DESCRIPTION"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://spankys.com" # the base hostname & protocol for your site
+url: "SITE URL" # the base hostname & protocol for your site
+
+# you can create whatever you'd like and reference it via site.key
 twitter_username: mikeriley131
 github_username:  mikeriley131
 
