@@ -1,3 +1,32 @@
 /* ===========================================================================
 ==== HEADER
 ============================================================================== */
+.nav__primary {
+  text-align: center;
+
+  @include brk-med {
+    text-align: right;
+    width: 8em;
+  }
+}
+
+.page-link {
+  color: $grey-dark;
+  margin-right: 2em;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $text-clr;
+    font-weight: bold;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include brk-med {
+    display: block;
+    margin-right: 0;
+  }
+}

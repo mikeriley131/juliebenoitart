@@ -1,4 +1,4 @@
-/* juliebenoitart.com v1.0.0 - 2016-08-11 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
+/* juliebenoitart.com v1.0.0 - 2016-08-12 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
 
 /* ===========================================================================
 ==== INCLUDED FONTS
@@ -873,7 +873,7 @@ code {
 body {
   background: #eee;
   counter-reset: number;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Cutive Mono", monospace;
 }
 
 main {
@@ -990,6 +990,35 @@ td {
 /* ===========================================================================
 ==== HEADER
 ============================================================================== */
+.nav__primary {
+  text-align: center;
+}
+@media screen and (min-width: 45em) {
+  .nav__primary {
+    text-align: right;
+    width: 8em;
+  }
+}
+
+.page-link {
+  color: #666;
+  margin-right: 2em;
+  text-decoration: none;
+}
+.page-link:hover, .page-link:active {
+  color: #222;
+  font-weight: bold;
+}
+.page-link:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 45em) {
+  .page-link {
+    display: block;
+    margin-right: 0;
+  }
+}
+
 /* ===========================================================================
 ==== HOME PAGE STYLES
 ============================================================================== */

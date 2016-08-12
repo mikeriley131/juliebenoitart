@@ -83,6 +83,7 @@ module.exports = function(grunt) {
           '_layouts/*.html',
           '_assets/css/*.css',
           '_assets/js/*.js',
+          '_pages/*/*',
           '!_site/**/*' // Stops watch from triggering again after Jekyll compiles
         ],
         tasks: ['jekyll']
