@@ -2,39 +2,12 @@
 ==== VARIABLES
 ============================================================================== */
 
-/* FONTS
------------------------------------------------------------------------------- */
-$font-stack: Helvetica, Arial, sans-serif;
-
-/* COLORS
------------------------------------------------------------------------------- */
-$grey: #999;
-$grey-light: #eee;
-$grey-dark: #666;
-$text: #222;
-
-/* COLOR CONFIGS
------------------------------------------------------------------------------- */
-$bg-clr: $grey-light;
-$text-clr: $text;
-// $link-clr:
-
-/* WIDTHS
------------------------------------------------------------------------------- */
-$full: 100%;
-$long: 75%;
-$med-long: 66.666666%;
-$med: 50%;
-$med-short: 33.333333%;
-$short: 25%;
-
 /* RESPONSIVE MEDIA QUERIES
 ------------------------------------------------------------------------------ */
 $brk-small-width: 30em;
 $brk-med-width: 45em;
 $brk-large-width: 60em;
 $brk-xlarge-width: 75em;
-
 
 @mixin brk-small {
   @media screen and (min-width: $brk-small-width) {
@@ -57,5 +30,81 @@ $brk-xlarge-width: 75em;
 @mixin brk-xlarge {
   @media screen and (min-width: $brk-xlarge-width) {
     @content;
+  }
+}
+
+/* FONTS
+------------------------------------------------------------------------------ */
+$font-stack: Helvetica, Arial, sans-serif;
+
+/* COLORS
+------------------------------------------------------------------------------ */
+$grey: #999;
+$grey-light: #eee;
+$grey-dark: #666;
+$text: #222;
+
+/* COLOR CONFIGS
+------------------------------------------------------------------------------ */
+$bg-clr: $grey-light;
+$text-clr: $text;
+// $link-clr:
+// $highlight-clr:
+
+/* WIDTHS
+------------------------------------------------------------------------------ */
+.row {
+  float: left;
+  width: 100%;
+}
+
+.xshort,
+.short,
+.one-third,
+.med,
+.two-thirds,
+.long,
+.xlong,
+.full {
+  float: left;
+  width: 100%;
+}
+
+@include brk-small {
+  .xshort,
+  .short,
+  .med {
+    width: 25%;
+  }
+  .one-third {
+    width: 32%;
+    margin-right: 2%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .long {
+    width: 49%;
+    margin-right: 2%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .two-thirds {
+    width: 66.66666%;
+  }
+}
+
+@include brk-large {
+  .xshort {
+    width: 6.25%;
+  }
+  .short {
+    width: 12.5%;
+  }
+  .xlong {
+    width: 75%;
   }
 }

@@ -5,7 +5,6 @@ body {
   background: $bg-clr;
   counter-reset: number;
   font-family: $font-stack;
-  font-size: 1.125em;
 }
 
 main {
@@ -13,6 +12,10 @@ main {
 
   p {
     margin-bottom: 1.5em;
+
+    &:last-child {
+       margin-bottom: 0;
+    }
   }
 
   a {
@@ -58,10 +61,6 @@ main {
   }
 }
 
-h1, h2, h3, h4 {
-  line-height: 1.25;
-}
-
 h2 {
   margin-bottom: .5em;
 }
@@ -85,6 +84,7 @@ blockquote {
 }
 
 img {
+  display: block;
   max-width: 100%;
   width: 100%;
 }
