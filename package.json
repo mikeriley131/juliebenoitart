@@ -1,8 +1,13 @@
 {
-  "name": "PROJECTNAME",
+  "name": "juliebenoitart.com",
+  "description": "Julie Benoit is an artist currently based in Longmont, CO.",
   "version": "1.0.0",
   "author": "Mike Riley",
   "contact": "pyrographicdesign AT gmail DOT com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikeriley131/juliebenoitart.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "grunt": "^0.4.5",
