@@ -1,4 +1,4 @@
-/* juliebenoitart.com v1.0.0 - 2016-08-12 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
+/* juliebenoitart.com v1.0.0 - 2016-10-08 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
 
 /* ===========================================================================
 ==== INCLUDED FONTS
@@ -971,7 +971,7 @@ td {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 .5em;
