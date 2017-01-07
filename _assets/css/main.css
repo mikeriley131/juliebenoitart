@@ -1,4 +1,4 @@
-/* juliebenoitart.com v1.0.0 - 2016-10-08 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
+/* juliebenoitart.com v1.0.0 - 2017-01-05 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
 
 /* ===========================================================================
 ==== INCLUDED FONTS
@@ -871,16 +871,16 @@ code {
 ==== GLOBAL ELEMENTS
 ============================================================================== */
 body {
-  background: #eee;
+  background: #fbfbfb;
   counter-reset: number;
   font-family: "Cutive Mono", monospace;
 }
 
 main {
-  padding: 2em 0;
+  padding: 1rem 0;
 }
 main p {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }
 main p:last-child {
   margin-bottom: 0;
@@ -893,44 +893,44 @@ main a {
 main ul li:before {
   content: '\2219';
   color: red;
-  margin-right: .5em;
+  margin-right: .5rem;
 }
 main ol li:before {
   counter-increment: number;
   content: counter(number);
   color: red;
-  margin-right: .5em;
+  margin-right: .5rem;
 }
 main li {
-  text-indent: -1.5em;
-  padding-left: 1.5em;
-  margin-bottom: .5em;
+  text-indent: -1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: .5rem;
 }
 main li {
-  text-indent: -1.5em;
-  padding-left: 1.5em;
-  margin-bottom: .5em;
+  text-indent: -1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: .5rem;
 }
 
 h2 {
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
 }
 
 h3, h4, h5, h6 {
-  margin-bottom: .25em;
+  margin-bottom: .25rem;
 }
 
 ul, ol {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 blockquote {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-style: italic;
-  padding: 0 1em;
+  padding: 0 1rem;
   border-left: 4px solid red;
 }
 
@@ -941,8 +941,8 @@ img {
 }
 
 small {
-  font-size: .85em;
-  margin-bottom: 1em;
+  font-size: .85rem;
+  margin-bottom: 1rem;
 }
 
 iframe {
@@ -952,7 +952,7 @@ iframe {
 }
 
 table {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 tr:nth-child(even) {
@@ -961,20 +961,20 @@ tr:nth-child(even) {
 
 th {
   border-bottom: 1px solid red;
-  padding: .5em;
+  padding: .5rem;
   padding-bottom: 0;
   text-align: left;
 }
 
 td {
-  padding: .5em;
+  padding: .5rem;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 .5em;
+  padding: 0 1rem;
 }
 .container:after {
   content: " ";
@@ -990,6 +990,10 @@ td {
 /* ===========================================================================
 ==== HEADER
 ============================================================================== */
+.header {
+  margin-top: 1rem;
+}
+
 .nav__primary {
   text-align: center;
 }
@@ -1000,23 +1004,29 @@ td {
   }
 }
 
-.page-link {
+.nav__primary--link {
   color: #666;
   margin-right: 2em;
   text-decoration: none;
 }
-.page-link:hover, .page-link:active {
+.nav__primary--link:hover, .nav__primary--link:active {
   color: #222;
   font-weight: bold;
 }
-.page-link:last-child {
+.nav__primary--link:first-child {
+  font-weight: bold;
+}
+.nav__primary--link:last-child {
   margin-right: 0;
 }
 @media screen and (min-width: 45em) {
-  .page-link {
+  .nav__primary--link {
     display: block;
     margin-right: 0;
   }
+}
+.nav__primary--link .home {
+  font-weight: bold;
 }
 
 /* ===========================================================================
@@ -1030,9 +1040,6 @@ td {
 ============================================================================== */
 /* ===========================================================================
 ==== FOOTER
-============================================================================== */
-/* ===========================================================================
-==== HELPER AND MODIFIER CLASSES
 ============================================================================== */
 /* Floats
 -------------------------------------------------------------------*/
@@ -1054,13 +1061,72 @@ td {
   font-size: 1.25em;
 }
 
+/* WIDTHS
+------------------------------------------------------------------------------ */
+.row {
+  float: left;
+  width: 100%;
+}
+
+.xshort,
+.short,
+.one-third,
+.med,
+.two-thirds,
+.long,
+.xlong,
+.full {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (min-width: 30em) {
+  .xshort,
+  .short,
+  .med {
+    width: 25%;
+  }
+
+  .one-third {
+    width: 32%;
+    margin-right: 2%;
+  }
+  .one-third:last-child {
+    margin-right: 0;
+  }
+
+  .long {
+    width: 49%;
+    margin-right: 2%;
+  }
+  .long:last-child {
+    margin-right: 0;
+  }
+
+  .two-thirds {
+    width: 66.66666%;
+  }
+}
+@media screen and (min-width: 60em) {
+  .xshort {
+    width: 6.25%;
+  }
+
+  .short {
+    width: 12.5%;
+  }
+
+  .xlong {
+    width: 75%;
+  }
+}
 /**
  * Used for development only:
  */
 body:before {
   background: #666;
   bottom: 0;
-  color: #eee;
+  color: #fbfbfb;
   content: 'XS';
   font-size: 0.75rem;
   padding: .25em .5em;

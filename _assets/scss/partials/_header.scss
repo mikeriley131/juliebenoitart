@@ -1,6 +1,10 @@
 /* ===========================================================================
 ==== HEADER
 ============================================================================== */
+.header {
+  margin-top: 1rem;
+}
+
 .nav__primary {
   text-align: center;
 
@@ -10,7 +14,7 @@
   }
 }
 
-.page-link {
+.nav__primary--link {
   color: $grey-dark;
   margin-right: 2em;
   text-decoration: none;
@@ -21,6 +25,10 @@
     font-weight: bold;
   }
 
+  &:first-child {
+    font-weight: bold;
+  }
+
   &:last-child {
     margin-right: 0;
   }
@@ -28,5 +36,9 @@
   @include brk-med {
     display: block;
     margin-right: 0;
+  }
+
+  .home {
+    font-weight: bold;
   }
 }
